@@ -38,7 +38,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         chmod +x packages.sh
-        git clone https://github.com/canmeng99/openwrt-package.git
+        git clone https://github.com/canmeng99/openwrt-package.git 
         cd openwrt-package
         rm -Rf *
         git rm --cache *
@@ -52,4 +52,4 @@ jobs:
         cd $GITHUB_WORKSPACE/openwrt-package
         git add .
         git commit -m "update$(TZ='Asia/Shanghai' date +-%m.%d)"
-        git push --quiet "https://${{ secrets.PAT }}@github.com/canmeng99/openwrt-package.git" HEAD:packages
+        git push --quiet "https://${{ secrets.PAT }}@github.com/canmeng99/openwrt-package.git" HEAD:master

@@ -1,61 +1,46 @@
 #!/bin/bash
-git clone https://github.com/garypang13/luci-app-bypass
-git clone https://github.com/garypang13/luci-app-dnsfilter
-git clone https://github.com/garypang13/smartdns-le
-git clone https://github.com/garypang13/luci-theme-edge
-git clone https://github.com/tty228/luci-app-serverchan
-git clone https://github.com/jerrykuku/luci-theme-argon
-git clone https://github.com/jerrykuku/luci-app-argon-config
-git clone https://github.com/jerrykuku/luci-app-vssr
-git clone https://github.com/jerrykuku/lua-maxminddb
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
-git clone https://github.com/zzsj0928/luci-app-pushbot
-git clone https://github.com/BCYDTZ/luci-app-UUGameAcc
-git clone https://github.com/garypang13/luci-app-eqos
-git clone https://github.com/BoringCat/luci-app-mentohust
-git clone https://github.com/small-5/luci-app-xlnetacc
-git clone https://github.com/project-lede/luci-app-godproxy
-git clone https://github.com/sirpdboy/luci-app-advanced
-git clone https://github.com/walkingsky/luci-wifidog luci-app-wifidog
+git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config.git
+git clone --depth 1 https://github.com/BCYDTZ/luci-app-UUGameAcc.git
+git clone --depth 1 https://github.com/BoringCat/luci-app-mentohust.git
+git clone --depth 1 https://github.com/BoringCat/luci-app-minieap.git
+git clone --depth 1 https://github.com/fw876/helloworld.git
+git clone --depth 1 https://github.com/garypang13/luci-app-dnsfilter.git
+git clone --depth 1 https://github.com/garypang13/luci-app-eqos.git
+git clone --depth 1 https://github.com/gdck/luci-app-control-weburl.git
+git clone --depth 1 https://github.com/immortalwrt/openwrt-cdnspeedtest.git cdnspeedtest
+git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb.git
+git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus.git
+git clone --depth 1 https://github.com/jerrykuku/luci-app-ttnode.git
+git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr.git
+git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon.git
+git clone --depth 1 https://github.com/kongfl888/luci-app-adguardhome.git
+git clone --depth 1 https://github.com/KumaTea/MentoHUST-SYSU-Guide.git
+git clone --depth 1 https://github.com/project-lede/luci-app-godproxy.git
+git clone --depth 1 https://github.com/riverscn/openwrt-iptvhelper.git
+git clone --depth 1 https://github.com/rufengsuixing/luci-app-syncdial.git
+git clone --depth 1 https://github.com/sensec/ddns-scripts_aliyun.git
+git clone --depth 1 https://github.com/sirpdboy/luci-app-advanced.git
+git clone --depth 1 https://github.com/sirpdboy/luci-app-autotimeset.git
+git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata.git
+git clone --depth 1 https://github.com/small-5/luci-app-xlnetacc.git
+git clone --depth 1 https://github.com/tty228/luci-app-serverchan.git
+git clone --depth 1 https://github.com/walkingsky/luci-wifidog.git luci-app-wifidog
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall.git
+git clone --depth 1 https://github.com/ysc3839/luci-proto-minieap.git
+git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot.git
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-arpbind
+svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-filetransfer
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-flowoffload
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-guest-wifi
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-ramfree
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-syncdial
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-vlmcsd
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/vlmcsd
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-airwhu
 svn co https://github.com/kenzok78/my-packages/trunk/luci-app-gpsysupgrade
-svn co https://github.com/garypang13/openwrt-packages/trunk/gost
-svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
-svn co https://github.com/frainzy1477/luci-app-clash/trunk ./luci-app-clash
-svn co https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-ddns/trunk/tencentcloud_ddns luci-app-tencentddns
-svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/naiveproxy
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/dns2socks
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/ipt2socks
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/kcptun
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/pdnsd-alt
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/shadowsocks-rust
-svn co https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/shadowsocksr-libev
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/simple-obfs
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/ssocks
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/simple-obfs
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/tcping
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/v2ray-plugin
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-plugin
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolddns
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-aliddns
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome
-svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-smartdns
-svn co https://github.com/immortalwrt/packages/trunk/net/smartdns
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost
-svn co https://github.com/kenzok78/jeii/trunk/luci-theme-argon_19.07
-
+svn co https://github.com/kenzok8/openwrt-packages/trunk/AdGuardHome
+svn co https://github.com/siropboy/mypackages/tree/master/luci-app-advanced
 
 
 rm -rf ./*/.git

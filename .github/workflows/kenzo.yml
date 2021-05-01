@@ -38,8 +38,8 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         chmod +x packages.sh
-        git clone https://github.com/canmeng99/openwrt-package.git
-        cd openwrt-package
+        git clone https://github.com/canmeng99/openwrt-package.git master
+        cd master
         rm -Rf *
         git rm --cache *
         $GITHUB_WORKSPACE/packages.sh

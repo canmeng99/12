@@ -45,11 +45,11 @@ jobs:
         $GITHUB_WORKSPACE/packages.sh
     - name: Upload
       env: 
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.PAT }}
       run: |
         [ -e $GITHUB_WORKSPACE/LICENSE ] && cp $GITHUB_WORKSPACE/LICENSE $GITHUB_WORKSPACE/openwrt-package
         [ -e $GITHUB_WORKSPACE/README.md ] && cp $GITHUB_WORKSPACE/README.md $GITHUB_WORKSPACE/openwrt-package
         cd $GITHUB_WORKSPACE/openwrt-package
         git add .
         git commit -m "update$(TZ='Asia/Shanghai' date +-%m.%d)"
-        git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/canmeng99/openwrt-package.git" HEAD:packages
+        git push --quiet "https://${{ secrets.PAT }}@github.com/canmeng99/openwrt-package.git" HEAD:packages

@@ -24,7 +24,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
-    - name: Initialization environment
+    - name: 初始化环境
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
@@ -34,7 +34,7 @@ jobs:
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
         
-    - name: Clone packages
+    - name: 克隆package
       run: |
         cd $GITHUB_WORKSPACE
         chmod +x packages.sh
@@ -43,7 +43,7 @@ jobs:
         rm -Rf *
         git rm --cache *
         $GITHUB_WORKSPACE/packages.sh
-    - name: Upload
+    - name: 上传
       env: 
         ACCESS_TOKEN: ${{ secrets.PAT }}
       run: |

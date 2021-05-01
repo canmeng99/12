@@ -19,12 +19,6 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
-
-    name: Update ${{matrix.target}}
-    strategy:
-      fail-fast: false
-      matrix:
-        target: [18.06,19.07]
         
     steps:
     - name: Checkout
@@ -43,19 +37,19 @@ jobs:
     - name: Clone packages
       run: |
         cd $GITHUB_WORKSPACE
-        chmod +x ${{matrix.target}}.sh
-        git clone -b ${{matrix.target}} https://github.com/canmeng99/openwrt-package.git ${{matrix.target}}
-        cd ${{matrix.target}}
+        chmod +x packages.sh
+        git clone https://github.com/canmeng99/openwrt-package.git
+        cd openwrt-package
         rm -Rf *
         git rm --cache *
-        $GITHUB_WORKSPACE/${{matrix.target}}.sh
+        $GITHUB_WORKSPACE/packages.sh
     - name: Upload
       env: 
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
-        [ -e $GITHUB_WORKSPACE/LICENSE ] && cp $GITHUB_WORKSPACE/LICENSE $GITHUB_WORKSPACE/${{matrix.target}}
-        [ -e $GITHUB_WORKSPACE/README.md ] && cp $GITHUB_WORKSPACE/README.md $GITHUB_WORKSPACE/${{matrix.target}}
-        cd $GITHUB_WORKSPACE/${{matrix.target}}
+        [ -e $GITHUB_WORKSPACE/LICENSE ] && cp $GITHUB_WORKSPACE/LICENSE $GITHUB_WORKSPACE/openwrt-package
+        [ -e $GITHUB_WORKSPACE/README.md ] && cp $GITHUB_WORKSPACE/README.md $GITHUB_WORKSPACE/openwrt-package
+        cd $GITHUB_WORKSPACE/openwrt-package
         git add .
         git commit -m "update$(TZ='Asia/Shanghai' date +-%m.%d)"
-        git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/kenzok8/small-package.git" HEAD:${{matrix.target}}
+        git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/canmeng99/openwrt-package.git" HEAD:packages

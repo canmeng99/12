@@ -43,6 +43,11 @@ jobs:
         rm -Rf *
         git rm --cache *
         $GITHUB_WORKSPACE/packages.sh
+        
+    - name: SSH connection to Actions
+      uses: garypang13/debugger-action@master
+      if: 1 == 1
+        
     - name: 上传
       env: 
         ACCESS_TOKEN: ${{ secrets.PAT }}

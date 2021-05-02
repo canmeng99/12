@@ -23,11 +23,6 @@
  git clone -b 19.07 https://github.com/kenzok8/small-package
 ```
 
-*  lean源码用18.06分支
-
-*  官方源码用19.07分支
-
-
 ##### 更新日志
 
 

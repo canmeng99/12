@@ -32,19 +32,19 @@ mv ./openwrt-passwall/* .
 rm -rf openwrt-passwall
 git clone --depth 1 https://github.com/ysc3839/luci-proto-minieap.git
 git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot.git
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-arpbind
+svn co https://github.com/coolsnowwolf/lede/trunk/master/package/lean/luci-app-arpbind
 svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-filetransfer
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-flowoffload
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-guest-wifi
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-ramfree
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-syncdial
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-vlmcsd
-svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/vlmcsd
+svn co https://github.com/coolsnowwolf/lede/trunk/master/package/lean/luci-app-filetransfer
+svn co https://github.com/coolsnowwolf/lede/trunk/master/package/lean/luci-app-flowoffload
+svn co https://github.com/coolsnowwolf/lede/trunk/master/package/lean/luci-app-guest-wifi
+svn co https://github.com/coolsnowwolf/lede/trunk/master/package/lean/luci-app-ramfree
+svn co https://github.com/coolsnowwolf/lede/trunk/master/package/lean/luci-app-syncdial
+svn co https://github.com/coolsnowwolf/lede/trunk/master/package/lean/luci-app-vlmcsd
+svn co https://github.com/coolsnowwolf/lede/trunk/master/package/lean/vlmcsd
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-airwhu
 svn co https://github.com/kenzok78/my-packages/trunk/luci-app-gpsysupgrade
 svn co https://github.com/kenzok8/openwrt-packages/trunk/AdGuardHome
-svn co https://github.com/siropboy/mypackages/tree/master/luci-app-advanced
+svn co https://github.com/siropboy/mypackages/trunk/master/luci-app-advanced
 
 
 rm -rf ./*/.git

@@ -25,7 +25,7 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata.git
 git clone --depth 1 https://github.com/small-5/luci-app-xlnetacc.git
 git clone --depth 1 https://github.com/tty228/luci-app-serverchan.git
 git clone --depth 1 https://github.com/walkingsky/luci-wifidog.git luci-app-wifidog
-git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall.git ./
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall.git $GITHUB_WORKSPACE/openwrt-package/
 git clone --depth 1 https://github.com/ysc3839/luci-proto-minieap.git
 git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot.git
 svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-arpbind

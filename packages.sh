@@ -12,7 +12,7 @@ rm -rf openwrt-passwall
 
 git clone https://github.com/garypang13/luci-app-dnsfilter.git
 #git clone https://github.com/tty228/luci-app-serverchan.git
-git clone https://github.com/sirpdboy/luci-app-netdata.git
+#git clone https://github.com/sirpdboy/luci-app-netdata.git
 #原作者
 #git clone https://github.com/kongfl888/luci-app-adguardhome.git
 #git clone https://github.com/kongfl888/luci-app-adguardhome

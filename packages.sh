@@ -5,6 +5,8 @@ git clone https://github.com/fw876/helloworld.git
 rm -rf ./*/.git
 mv ./helloworld/luci-app-ssr-plus .
 rm -rf helloworld
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
+
 git clone https://github.com/xiaorouji/openwrt-passwall.git
 rm -rf ./*/.git
 mv ./openwrt-passwall/* .

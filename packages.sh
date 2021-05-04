@@ -27,6 +27,7 @@ git clone https://github.com/small-5/luci-app-xlnetacc.git
 git clone https://github.com/jerrykuku/luci-theme-argon.git
 git clone https://github.com/jerrykuku/luci-app-argon-config.git
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git
+git clone https://github.com/garypang13/luci-theme-edge.git
 # AdGuardHome
 svn co https://github.com/kenzok8/openwrt-packages/trunk/AdGuardHome
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome

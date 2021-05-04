@@ -12,7 +12,7 @@ rm -rf ./*/.git
 mv ./openwrt-passwall/* .
 rm -rf openwrt-passwall
 
-git clone https://github.com/garypang13/luci-app-dnsfilter.git
+#git clone https://github.com/garypang13/luci-app-dnsfilter.git
 #git clone https://github.com/tty228/luci-app-serverchan.git
 #git clone https://github.com/sirpdboy/luci-app-netdata.git
 #原作者
@@ -30,7 +30,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git
 svn co https://github.com/kenzok8/openwrt-packages/trunk/AdGuardHome
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome
 
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced
+#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-turboacc
 #svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-control-weburl
 

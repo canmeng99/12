@@ -17,6 +17,11 @@ git clone https://github.com/garypang13/luci-app-dnsfilter.git
 git clone https://github.com/sirpdboy/luci-app-netdata.git
 git clone https://github.com/garypang13/luci-app-eqos.git
 git clone https://github.com/jerrykuku/luci-app-ttnode.git
+git clone https://github.com/immortalwrt/openwrt-cdnspeedtest.git luci-app-cdnspeedtest
+git clone https://github.com/BoringCat/luci-app-mentohust.git
+#git clone https://github.com/BoringCat/luci-app-minieap.git
+git clone https://github.com/KumaTea/openwrt-minieap
+#git clone https://github.com/KumaTea/MentoHUST-SYSU-Guide.git
 #原作者
 #git clone https://github.com/kongfl888/luci-app-adguardhome.git
 #git clone https://github.com/kongfl888/luci-app-adguardhome
